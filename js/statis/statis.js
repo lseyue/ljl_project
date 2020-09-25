@@ -64,41 +64,12 @@ layui.use(['form', 'layer', 'laydate'], function() {
 	
 	// 成员人数统计饼图
 	var pienum = {
-	    title : {
-	        text: '根据各年级统计成员人数饼图',
-	        x:'center'
-	    },
-	    tooltip : {
-	        trigger: 'item',
-	        formatter: "{a} <br/>{b} : {c} ({d}%)"
-	    },
-	    legend: {
-	        orient: 'vertical',
-	        left: 'left',
-	        data: ['大一','大二','大三','大四','毕业']
-	    },
-	    series : [
-	        {
-	            name: '成员来源',
-	            type: 'pie',
-	            radius : '55%',
-	            center: ['50%', '60%'],
-	            data:[
-	                {value:335, name:'大一'},
-	                {value:560, name:'大二'},
-	                {value:800, name:'大三'},
-	                {value:300, name:'大四'},
-	                {value:150, name:'毕业'}
-	            ],
-	            itemStyle: {
-	                emphasis: {
-	                    shadowBlur: 10,
-	                    shadowOffsetX: 0,
-	                    shadowColor: 'rgba(0, 0, 0, 0.5)'
-	                }
-	            }
-	        }
-	    ]
+	      xAxis: {},
+    yAxis: {},
+    series: [{
+        data: [[20, 120], [50, 200], [40, 50]],
+        type: 'line'
+    }]
 	};
 	// 各院系成员统计饼图
 	var piewin = {
